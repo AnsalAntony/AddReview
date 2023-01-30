@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D3DE542283AA41B005369BD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DE541283AA41B005369BD /* Extension.swift */; };
+		4D724A2C2987EC9B00301BF9 /* DataDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D724A2B2987EC9B00301BF9 /* DataDecode.swift */; };
+		4D72E2F4283E5181000610C7 /* MatchListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D72E2F3283E5181000610C7 /* MatchListModel.swift */; };
+		4D72E2FA283E51A1000610C7 /* MatchDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D72E2F9283E51A1000610C7 /* MatchDetailsModel.swift */; };
+		4D72E305283E6EBD000610C7 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D72E304283E6EBD000610C7 /* CalendarViewModel.swift */; };
+		4D72E340283FAB15000610C7 /* MatchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D72E33F283FAB15000610C7 /* MatchDetailsViewModel.swift */; };
+		4D7D73B4283D5A6100D757D6 /* ProgressiveLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D73B3283D5A6100D757D6 /* ProgressiveLoader.swift */; };
+		4D87C292283A95B20056E27B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D87C291283A95B20056E27B /* AppDelegate.swift */; };
+		4D87C294283A95B20056E27B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D87C293283A95B20056E27B /* SceneDelegate.swift */; };
+		4D87C299283A95B20056E27B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D87C297283A95B20056E27B /* Main.storyboard */; };
+		4D87C29C283A95B20056E27B /* Oddsium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D87C29A283A95B20056E27B /* Oddsium.xcdatamodeld */; };
+		4D87C29E283A95B50056E27B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D87C29D283A95B50056E27B /* Assets.xcassets */; };
+		4D87C2A1283A95B50056E27B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D87C29F283A95B50056E27B /* LaunchScreen.storyboard */; };
+		4D87C2AC283A95B50056E27B /* OddsiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D87C2AB283A95B50056E27B /* OddsiumTests.swift */; };
+		4D87C2B7283A95B50056E27B /* OddsiumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D87C2B6283A95B50056E27B /* OddsiumUITests.swift */; };
+		4D87C2D1283A99750056E27B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D87C2D0283A99750056E27B /* LoginViewController.swift */; };
+		4DB33728298027360065AA70 /* TPKeyboardAvoidingSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4DB33727298027360065AA70 /* TPKeyboardAvoidingSwift */; };
+		4DB3372B2980274D0065AA70 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 4DB3372A2980274D0065AA70 /* MBProgressHUD */; };
+		4DB3372E298084D60065AA70 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4DB3372D298084D60065AA70 /* SDWebImage */; };
+		4DB33730298084D60065AA70 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4DB3372F298084D60065AA70 /* SDWebImageMapKit */; };
+		4DB3373C298151920065AA70 /* OddsiumAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB33737298151920065AA70 /* OddsiumAPI.swift */; };
+		4DB3373D298151920065AA70 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB33738298151920065AA70 /* NetworkService.swift */; };
+		4DB3373F298151920065AA70 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3373A298151920065AA70 /* URLRequest.swift */; };
+		4DB33742298178140065AA70 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB33741298178140065AA70 /* NetworkManager.swift */; };
+		4DD65270283ACE2F0056DED1 /* MyBetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6526F283ACE2F0056DED1 /* MyBetsViewController.swift */; };
+		4DD65275283ACE560056DED1 /* AllMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD65274283ACE560056DED1 /* AllMatchesViewController.swift */; };
+		4DD6527A283ACE7E0056DED1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD65279283ACE7E0056DED1 /* MenuViewController.swift */; };
+		4DD6527F283ACE970056DED1 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6527E283ACE970056DED1 /* CalendarViewController.swift */; };
+		4DD65284283ACEB80056DED1 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD65283283ACEB80056DED1 /* FavouritesViewController.swift */; };
+		4DD6528E283AD54D0056DED1 /* MatchScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6528C283AD54D0056DED1 /* MatchScoreTableViewCell.swift */; };
+		4DD6528F283AD54D0056DED1 /* MatchScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD6528D283AD54D0056DED1 /* MatchScoreTableViewCell.xib */; };
+		4DD65296283BC56B0056DED1 /* MatchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD65295283BC56B0056DED1 /* MatchDetailsViewController.swift */; };
+		4DD652A5283BC6FB0056DED1 /* Match.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD652A4283BC6FB0056DED1 /* Match.storyboard */; };
+		4DD652AF283CF8610056DED1 /* MatchTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD652AD283CF8610056DED1 /* MatchTitleCollectionViewCell.swift */; };
+		4DD652B0283CF8610056DED1 /* MatchTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD652AE283CF8610056DED1 /* MatchTitleCollectionViewCell.xib */; };
+		4DD652BA283D0AD00056DED1 /* MatchDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD652B8283D0AD00056DED1 /* MatchDetailsTableViewCell.swift */; };
+		4DD652BB283D0AD00056DED1 /* MatchDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD652B9283D0AD00056DED1 /* MatchDetailsTableViewCell.xib */; };
+		4DD652DD283D2E9F0056DED1 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD652DC283D2E9F0056DED1 /* AppConstants.swift */; };
+		4DEE261628414C9F006241CC /* WeekCalenderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE261428414C9F006241CC /* WeekCalenderCollectionViewCell.swift */; };
+		4DEE261728414C9F006241CC /* WeekCalenderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DEE261528414C9F006241CC /* WeekCalenderCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D87C2A8283A95B50056E27B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D87C286283A95B20056E27B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D87C28D283A95B20056E27B;
+			remoteInfo = Oddsium;
+		};
+		4D87C2B3283A95B50056E27B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D87C286283A95B20056E27B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D87C28D283A95B20056E27B;
+			remoteInfo = Oddsium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D3DE541283AA41B005369BD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4D724A2B2987EC9B00301BF9 /* DataDecode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDecode.swift; sourceTree = "<group>"; };
+		4D72E2F3283E5181000610C7 /* MatchListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListModel.swift; sourceTree = "<group>"; };
+		4D72E2F9283E51A1000610C7 /* MatchDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsModel.swift; sourceTree = "<group>"; };
+		4D72E304283E6EBD000610C7 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		4D72E33F283FAB15000610C7 /* MatchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewModel.swift; sourceTree = "<group>"; };
+		4D7D73B3283D5A6100D757D6 /* ProgressiveLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressiveLoader.swift; sourceTree = "<group>"; };
+		4D87C28E283A95B20056E27B /* Oddsium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oddsium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D87C291283A95B20056E27B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D87C293283A95B20056E27B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4D87C298283A95B20056E27B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D87C29B283A95B20056E27B /* Oddsium.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Oddsium.xcdatamodel; sourceTree = "<group>"; };
+		4D87C29D283A95B50056E27B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D87C2A0283A95B50056E27B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D87C2A2283A95B50056E27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D87C2A7283A95B50056E27B /* OddsiumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OddsiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D87C2AB283A95B50056E27B /* OddsiumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsiumTests.swift; sourceTree = "<group>"; };
+		4D87C2AD283A95B50056E27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D87C2B2283A95B50056E27B /* OddsiumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OddsiumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D87C2B6283A95B50056E27B /* OddsiumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsiumUITests.swift; sourceTree = "<group>"; };
+		4D87C2B8283A95B50056E27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D87C2D0283A99750056E27B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4DB33737298151920065AA70 /* OddsiumAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OddsiumAPI.swift; sourceTree = "<group>"; };
+		4DB33738298151920065AA70 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4DB3373A298151920065AA70 /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		4DB33741298178140065AA70 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4DD6526F283ACE2F0056DED1 /* MyBetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBetsViewController.swift; sourceTree = "<group>"; };
+		4DD65274283ACE560056DED1 /* AllMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMatchesViewController.swift; sourceTree = "<group>"; };
+		4DD65279283ACE7E0056DED1 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4DD6527E283ACE970056DED1 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		4DD65283283ACEB80056DED1 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		4DD6528C283AD54D0056DED1 /* MatchScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchScoreTableViewCell.swift; sourceTree = "<group>"; };
+		4DD6528D283AD54D0056DED1 /* MatchScoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchScoreTableViewCell.xib; sourceTree = "<group>"; };
+		4DD65295283BC56B0056DED1 /* MatchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewController.swift; sourceTree = "<group>"; };
+		4DD652A4283BC6FB0056DED1 /* Match.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Match.storyboard; sourceTree = "<group>"; };
+		4DD652AD283CF8610056DED1 /* MatchTitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		4DD652AE283CF8610056DED1 /* MatchTitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchTitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		4DD652B8283D0AD00056DED1 /* MatchDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		4DD652B9283D0AD00056DED1 /* MatchDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		4DD652DC283D2E9F0056DED1 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		4DEE261428414C9F006241CC /* WeekCalenderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCalenderCollectionViewCell.swift; sourceTree = "<group>"; };
+		4DEE261528414C9F006241CC /* WeekCalenderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeekCalenderCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D87C28B283A95B20056E27B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DB3372B2980274D0065AA70 /* MBProgressHUD in Frameworks */,
+				4DB33730298084D60065AA70 /* SDWebImageMapKit in Frameworks */,
+				4DB33728298027360065AA70 /* TPKeyboardAvoidingSwift in Frameworks */,
+				4DB3372E298084D60065AA70 /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D87C2A4283A95B50056E27B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D87C2AF283A95B50056E27B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D3DE53A283A9B5F005369BD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4DB33741298178140065AA70 /* NetworkManager.swift */,
+				4DB33737298151920065AA70 /* OddsiumAPI.swift */,
+				4DB33738298151920065AA70 /* NetworkService.swift */,
+				4DB3373A298151920065AA70 /* URLRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4D3DE53B283A9B7A005369BD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4D72E304283E6EBD000610C7 /* CalendarViewModel.swift */,
+				4D72E33F283FAB15000610C7 /* MatchDetailsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4D3DE53C283A9BB9005369BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D72E2F3283E5181000610C7 /* MatchListModel.swift */,
+				4D72E2F9283E51A1000610C7 /* MatchDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D87C285283A95B20056E27B = {
+			isa = PBXGroup;
+			children = (
+				4D87C290283A95B20056E27B /* Oddsium */,
+				4D87C2AA283A95B50056E27B /* OddsiumTests */,
+				4D87C2B5283A95B50056E27B /* OddsiumUITests */,
+				4D87C28F283A95B20056E27B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D87C28F283A95B20056E27B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D87C28E283A95B20056E27B /* Oddsium.app */,
+				4D87C2A7283A95B50056E27B /* OddsiumTests.xctest */,
+				4D87C2B2283A95B50056E27B /* OddsiumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D87C290283A95B20056E27B /* Oddsium */ = {
+			isa = PBXGroup;
+			children = (
+				4DD652DA283D2E0C0056DED1 /* Utility */,
+				4D3DE53C283A9BB9005369BD /* Model */,
+				4D87C2CF283A99110056E27B /* Controllers */,
+				4D3DE53B283A9B7A005369BD /* ViewModels */,
+				4D3DE53A283A9B5F005369BD /* Network */,
+				4D87C2CE283A989E0056E27B /* CustomCells */,
+				4D87C2CD283A978D0056E27B /* storyboards */,
+				4DD652DB283D2E670056DED1 /* Fonts */,
+				4D87C291283A95B20056E27B /* AppDelegate.swift */,
+				4D87C293283A95B20056E27B /* SceneDelegate.swift */,
+				4DD652DC283D2E9F0056DED1 /* AppConstants.swift */,
+				4D87C29D283A95B50056E27B /* Assets.xcassets */,
+				4D87C29F283A95B50056E27B /* LaunchScreen.storyboard */,
+				4D87C2A2283A95B50056E27B /* Info.plist */,
+				4D87C29A283A95B20056E27B /* Oddsium.xcdatamodeld */,
+			);
+			path = Oddsium;
+			sourceTree = "<group>";
+		};
+		4D87C2AA283A95B50056E27B /* OddsiumTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D87C2AB283A95B50056E27B /* OddsiumTests.swift */,
+				4D87C2AD283A95B50056E27B /* Info.plist */,
+			);
+			path = OddsiumTests;
+			sourceTree = "<group>";
+		};
+		4D87C2B5283A95B50056E27B /* OddsiumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D87C2B6283A95B50056E27B /* OddsiumUITests.swift */,
+				4D87C2B8283A95B50056E27B /* Info.plist */,
+			);
+			path = OddsiumUITests;
+			sourceTree = "<group>";
+		};
+		4D87C2CD283A978D0056E27B /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4D87C297283A95B20056E27B /* Main.storyboard */,
+				4DD652A4283BC6FB0056DED1 /* Match.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		4D87C2CE283A989E0056E27B /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				4DEE261028414C5C006241CC /* WeekCalender */,
+				4DD652B7283D0A8B0056DED1 /* MatchDetailsTableViewCell */,
+				4DD652AC283CF7D40056DED1 /* MatchTitleCollectionViewCell */,
+				4DD652AB283CF7A80056DED1 /* MatchScoreTableViewCell */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		4D87C2CF283A99110056E27B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DD65294283BC5260056DED1 /* MatchDetails */,
+				4DD6526B283ACDF30056DED1 /* TabBar */,
+				4DD6526A283ACDE80056DED1 /* Login */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4DD6526A283ACDE80056DED1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4D87C2D0283A99750056E27B /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4DD6526B283ACDF30056DED1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4DD6526F283ACE2F0056DED1 /* MyBetsViewController.swift */,
+				4DD65274283ACE560056DED1 /* AllMatchesViewController.swift */,
+				4DD65279283ACE7E0056DED1 /* MenuViewController.swift */,
+				4DD6527E283ACE970056DED1 /* CalendarViewController.swift */,
+				4DD65283283ACEB80056DED1 /* FavouritesViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4DD65294283BC5260056DED1 /* MatchDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4DD65295283BC56B0056DED1 /* MatchDetailsViewController.swift */,
+			);
+			path = MatchDetails;
+			sourceTree = "<group>";
+		};
+		4DD652AB283CF7A80056DED1 /* MatchScoreTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4DD6528C283AD54D0056DED1 /* MatchScoreTableViewCell.swift */,
+				4DD6528D283AD54D0056DED1 /* MatchScoreTableViewCell.xib */,
+			);
+			path = MatchScoreTableViewCell;
+			sourceTree = "<group>";
+		};
+		4DD652AC283CF7D40056DED1 /* MatchTitleCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4DD652AD283CF8610056DED1 /* MatchTitleCollectionViewCell.swift */,
+				4DD652AE283CF8610056DED1 /* MatchTitleCollectionViewCell.xib */,
+			);
+			path = MatchTitleCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		4DD652B7283D0A8B0056DED1 /* MatchDetailsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4DD652B8283D0AD00056DED1 /* MatchDetailsTableViewCell.swift */,
+				4DD652B9283D0AD00056DED1 /* MatchDetailsTableViewCell.xib */,
+			);
+			path = MatchDetailsTableViewCell;
+			sourceTree = "<group>";
+		};
+		4DD652DA283D2E0C0056DED1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4D724A2B2987EC9B00301BF9 /* DataDecode.swift */,
+				4D3DE541283AA41B005369BD /* Extension.swift */,
+				4D7D73B3283D5A6100D757D6 /* ProgressiveLoader.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		4DD652DB283D2E670056DED1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4DEE261028414C5C006241CC /* WeekCalender */ = {
+			isa = PBXGroup;
+			children = (
+				4DEE261428414C9F006241CC /* WeekCalenderCollectionViewCell.swift */,
+				4DEE261528414C9F006241CC /* WeekCalenderCollectionViewCell.xib */,
+			);
+			path = WeekCalender;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D87C28D283A95B20056E27B /* Oddsium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D87C2BB283A95B50056E27B /* Build configuration list for PBXNativeTarget "Oddsium" */;
+			buildPhases = (
+				4D87C28A283A95B20056E27B /* Sources */,
+				4D87C28B283A95B20056E27B /* Frameworks */,
+				4D87C28C283A95B20056E27B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Oddsium;
+			packageProductDependencies = (
+				4DB33727298027360065AA70 /* TPKeyboardAvoidingSwift */,
+				4DB3372A2980274D0065AA70 /* MBProgressHUD */,
+				4DB3372D298084D60065AA70 /* SDWebImage */,
+				4DB3372F298084D60065AA70 /* SDWebImageMapKit */,
+			);
+			productName = Oddsium;
+			productReference = 4D87C28E283A95B20056E27B /* Oddsium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D87C2A6283A95B50056E27B /* OddsiumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D87C2BE283A95B50056E27B /* Build configuration list for PBXNativeTarget "OddsiumTests" */;
+			buildPhases = (
+				4D87C2A3283A95B50056E27B /* Sources */,
+				4D87C2A4283A95B50056E27B /* Frameworks */,
+				4D87C2A5283A95B50056E27B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D87C2A9283A95B50056E27B /* PBXTargetDependency */,
+			);
+			name = OddsiumTests;
+			productName = OddsiumTests;
+			productReference = 4D87C2A7283A95B50056E27B /* OddsiumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D87C2B1283A95B50056E27B /* OddsiumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D87C2C1283A95B50056E27B /* Build configuration list for PBXNativeTarget "OddsiumUITests" */;
+			buildPhases = (
+				4D87C2AE283A95B50056E27B /* Sources */,
+				4D87C2AF283A95B50056E27B /* Frameworks */,
+				4D87C2B0283A95B50056E27B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D87C2B4283A95B50056E27B /* PBXTargetDependency */,
+			);
+			name = OddsiumUITests;
+			productName = OddsiumUITests;
+			productReference = 4D87C2B2283A95B50056E27B /* OddsiumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D87C286283A95B20056E27B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4D87C28D283A95B20056E27B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4D87C2A6283A95B50056E27B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4D87C28D283A95B20056E27B;
+					};
+					4D87C2B1283A95B50056E27B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4D87C28D283A95B20056E27B;
+					};
+				};
+			};
+			buildConfigurationList = 4D87C289283A95B20056E27B /* Build configuration list for PBXProject "Oddsium" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D87C285283A95B20056E27B;
+			packageReferences = (
+				4DB33726298027360065AA70 /* XCRemoteSwiftPackageReference "TPKeyboardAvoidingSwift" */,
+				4DB337292980274D0065AA70 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				4DB3372C298084D50065AA70 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 4D87C28F283A95B20056E27B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D87C28D283A95B20056E27B /* Oddsium */,
+				4D87C2A6283A95B50056E27B /* OddsiumTests */,
+				4D87C2B1283A95B50056E27B /* OddsiumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D87C28C283A95B20056E27B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DD6528F283AD54D0056DED1 /* MatchScoreTableViewCell.xib in Resources */,
+				4D87C2A1283A95B50056E27B /* LaunchScreen.storyboard in Resources */,
+				4D87C29E283A95B50056E27B /* Assets.xcassets in Resources */,
+				4D87C299283A95B20056E27B /* Main.storyboard in Resources */,
+				4DEE261728414C9F006241CC /* WeekCalenderCollectionViewCell.xib in Resources */,
+				4DD652B0283CF8610056DED1 /* MatchTitleCollectionViewCell.xib in Resources */,
+				4DD652A5283BC6FB0056DED1 /* Match.storyboard in Resources */,
+				4DD652BB283D0AD00056DED1 /* MatchDetailsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D87C2A5283A95B50056E27B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D87C2B0283A95B50056E27B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D87C28A283A95B20056E27B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DD65270283ACE2F0056DED1 /* MyBetsViewController.swift in Sources */,
+				4DD65275283ACE560056DED1 /* AllMatchesViewController.swift in Sources */,
+				4DD652BA283D0AD00056DED1 /* MatchDetailsTableViewCell.swift in Sources */,
+				4DD652AF283CF8610056DED1 /* MatchTitleCollectionViewCell.swift in Sources */,
+				4DB3373D298151920065AA70 /* NetworkService.swift in Sources */,
+				4DB3373C298151920065AA70 /* OddsiumAPI.swift in Sources */,
+				4D72E2F4283E5181000610C7 /* MatchListModel.swift in Sources */,
+				4D72E305283E6EBD000610C7 /* CalendarViewModel.swift in Sources */,
+				4DEE261628414C9F006241CC /* WeekCalenderCollectionViewCell.swift in Sources */,
+				4DD652DD283D2E9F0056DED1 /* AppConstants.swift in Sources */,
+				4D724A2C2987EC9B00301BF9 /* DataDecode.swift in Sources */,
+				4DD65296283BC56B0056DED1 /* MatchDetailsViewController.swift in Sources */,
+				4D3DE542283AA41B005369BD /* Extension.swift in Sources */,
+				4DD6528E283AD54D0056DED1 /* MatchScoreTableViewCell.swift in Sources */,
+				4D72E2FA283E51A1000610C7 /* MatchDetailsModel.swift in Sources */,
+				4DB3373F298151920065AA70 /* URLRequest.swift in Sources */,
+				4DB33742298178140065AA70 /* NetworkManager.swift in Sources */,
+				4D87C29C283A95B20056E27B /* Oddsium.xcdatamodeld in Sources */,
+				4D7D73B4283D5A6100D757D6 /* ProgressiveLoader.swift in Sources */,
+				4D87C292283A95B20056E27B /* AppDelegate.swift in Sources */,
+				4D87C2D1283A99750056E27B /* LoginViewController.swift in Sources */,
+				4DD6527F283ACE970056DED1 /* CalendarViewController.swift in Sources */,
+				4D87C294283A95B20056E27B /* SceneDelegate.swift in Sources */,
+				4DD65284283ACEB80056DED1 /* FavouritesViewController.swift in Sources */,
+				4DD6527A283ACE7E0056DED1 /* MenuViewController.swift in Sources */,
+				4D72E340283FAB15000610C7 /* MatchDetailsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D87C2A3283A95B50056E27B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D87C2AC283A95B50056E27B /* OddsiumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D87C2AE283A95B50056E27B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D87C2B7283A95B50056E27B /* OddsiumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D87C2A9283A95B50056E27B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D87C28D283A95B20056E27B /* Oddsium */;
+			targetProxy = 4D87C2A8283A95B50056E27B /* PBXContainerItemProxy */;
+		};
+		4D87C2B4283A95B50056E27B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D87C28D283A95B20056E27B /* Oddsium */;
+			targetProxy = 4D87C2B3283A95B50056E27B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D87C297283A95B20056E27B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D87C298283A95B20056E27B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D87C29F283A95B50056E27B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D87C2A0283A95B50056E27B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D87C2B9283A95B50056E27B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D87C2BA283A95B50056E27B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D87C2BC283A95B50056E27B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Oddsium/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ansal.Oddsium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D87C2BD283A95B50056E27B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Oddsium/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ansal.Oddsium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4D87C2BF283A95B50056E27B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OddsiumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ansal.OddsiumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oddsium.app/Oddsium";
+			};
+			name = Debug;
+		};
+		4D87C2C0283A95B50056E27B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OddsiumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ansal.OddsiumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oddsium.app/Oddsium";
+			};
+			name = Release;
+		};
+		4D87C2C2283A95B50056E27B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OddsiumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ansal.OddsiumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Oddsium;
+			};
+			name = Debug;
+		};
+		4D87C2C3283A95B50056E27B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OddsiumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ansal.OddsiumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Oddsium;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D87C289283A95B20056E27B /* Build configuration list for PBXProject "Oddsium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D87C2B9283A95B50056E27B /* Debug */,
+				4D87C2BA283A95B50056E27B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D87C2BB283A95B50056E27B /* Build configuration list for PBXNativeTarget "Oddsium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D87C2BC283A95B50056E27B /* Debug */,
+				4D87C2BD283A95B50056E27B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D87C2BE283A95B50056E27B /* Build configuration list for PBXNativeTarget "OddsiumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D87C2BF283A95B50056E27B /* Debug */,
+				4D87C2C0283A95B50056E27B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D87C2C1283A95B50056E27B /* Build configuration list for PBXNativeTarget "OddsiumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D87C2C2283A95B50056E27B /* Debug */,
+				4D87C2C3283A95B50056E27B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4DB33726298027360065AA70 /* XCRemoteSwiftPackageReference "TPKeyboardAvoidingSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple-avadhesh/TPKeyboardAvoidingSwift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		4DB337292980274D0065AA70 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		4DB3372C298084D50065AA70 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4DB33727298027360065AA70 /* TPKeyboardAvoidingSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DB33726298027360065AA70 /* XCRemoteSwiftPackageReference "TPKeyboardAvoidingSwift" */;
+			productName = TPKeyboardAvoidingSwift;
+		};
+		4DB3372A2980274D0065AA70 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DB337292980274D0065AA70 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		4DB3372D298084D60065AA70 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DB3372C298084D50065AA70 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		4DB3372F298084D60065AA70 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DB3372C298084D50065AA70 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4D87C29A283A95B20056E27B /* Oddsium.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D87C29B283A95B20056E27B /* Oddsium.xcdatamodel */,
+			);
+			currentVersion = 4D87C29B283A95B20056E27B /* Oddsium.xcdatamodel */;
+			path = Oddsium.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4D87C286283A95B20056E27B /* Project object */;
+}

@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MBProgressHUD",
+        "repositoryURL": "https://github.com/jdg/MBProgressHUD.git",
+        "state": {
+          "branch": "master",
+          "revision": "c843e4c86d320a11552898646effa8000042ab16",
+          "version": null
+        }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
+        "state": {
+          "branch": null,
+          "revision": "6c6b951845a520fa7e8356e28adb5339c0f008d3",
+          "version": "5.15.0"
+        }
+      },
+      {
+        "package": "TPKeyboardAvoidingSwift",
+        "repositoryURL": "https://github.com/apple-avadhesh/TPKeyboardAvoidingSwift.git",
+        "state": {
+          "branch": "master",
+          "revision": "285ff05f3c62ed3b9d137afc169b34599de1a147",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
