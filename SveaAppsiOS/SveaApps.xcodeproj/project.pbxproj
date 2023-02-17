@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D4824CC299EFF85000D8997 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4D4824CB299EFF85000D8997 /* SDWebImage */; };
+		4D4824CE299EFF85000D8997 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4D4824CD299EFF85000D8997 /* SDWebImageMapKit */; };
+		4D4824D1299EFF9C000D8997 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 4D4824D0299EFF9C000D8997 /* MBProgressHUD */; };
+		4DA4D55F299A3A25001CA644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D55E299A3A25001CA644 /* AppDelegate.swift */; };
+		4DA4D561299A3A25001CA644 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D560299A3A25001CA644 /* SceneDelegate.swift */; };
+		4DA4D566299A3A25001CA644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4D564299A3A25001CA644 /* Main.storyboard */; };
+		4DA4D569299A3A25001CA644 /* SveaApps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D567299A3A25001CA644 /* SveaApps.xcdatamodeld */; };
+		4DA4D56B299A3A27001CA644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4D56A299A3A27001CA644 /* Assets.xcassets */; };
+		4DA4D56E299A3A27001CA644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4D56C299A3A27001CA644 /* LaunchScreen.storyboard */; };
+		4DA4D579299A3A27001CA644 /* SveaAppsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D578299A3A27001CA644 /* SveaAppsTests.swift */; };
+		4DA4D583299A3A27001CA644 /* SveaAppsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D582299A3A27001CA644 /* SveaAppsUITests.swift */; };
+		4DA4D585299A3A27001CA644 /* SveaAppsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D584299A3A27001CA644 /* SveaAppsUITestsLaunchTests.swift */; };
+		4DA4D59C299A3BE9001CA644 /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D59B299A3BE9001CA644 /* PlaceViewController.swift */; };
+		4DA4D59E299A3C9F001CA644 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D59D299A3C9F001CA644 /* Constants.swift */; };
+		4DA4D5A0299A3DDE001CA644 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D59F299A3DDE001CA644 /* APIConstants.swift */; };
+		4DA4D5A2299A3E1C001CA644 /* Data+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D5A1299A3E1C001CA644 /* Data+Decode.swift */; };
+		4DA4D5A4299AC330001CA644 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D5A3299AC330001CA644 /* Extensions.swift */; };
+		4DA4D5A6299ACB4D001CA644 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D5A5299ACB4D001CA644 /* NetworkManager.swift */; };
+		4DA4D5AC299AD893001CA644 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D5AB299AD893001CA644 /* NetworkService.swift */; };
+		4DA4D5AE299ADA7B001CA644 /* APIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D5AD299ADA7B001CA644 /* APIResponseHandler.swift */; };
+		4DA4D5B0299AF2C9001CA644 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D5AF299AF2C9001CA644 /* PlaceViewModel.swift */; };
+		4DA4D5B2299D9445001CA644 /* PlaceListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D5B1299D9445001CA644 /* PlaceListModel.swift */; };
+		4DA4D5B5299E6885001CA644 /* PlaceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D5B3299E6885001CA644 /* PlaceListTableViewCell.swift */; };
+		4DA4D5B6299E6885001CA644 /* PlaceListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4D5B4299E6885001CA644 /* PlaceListTableViewCell.xib */; };
+		4DA4D5BB299E6E86001CA644 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D5BA299E6E86001CA644 /* CardView.swift */; };
+		4DA4D5BD299EC63B001CA644 /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4D5BC299EC63B001CA644 /* PlaceDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DA4D575299A3A27001CA644 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DA4D553299A3A25001CA644 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DA4D55A299A3A25001CA644;
+			remoteInfo = SveaApps;
+		};
+		4DA4D57F299A3A27001CA644 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DA4D553299A3A25001CA644 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DA4D55A299A3A25001CA644;
+			remoteInfo = SveaApps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DA4D55B299A3A25001CA644 /* SveaApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SveaApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA4D55E299A3A25001CA644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DA4D560299A3A25001CA644 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4DA4D565299A3A25001CA644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DA4D568299A3A25001CA644 /* SveaApps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SveaApps.xcdatamodel; sourceTree = "<group>"; };
+		4DA4D56A299A3A27001CA644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DA4D56D299A3A27001CA644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DA4D56F299A3A27001CA644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DA4D574299A3A27001CA644 /* SveaAppsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SveaAppsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA4D578299A3A27001CA644 /* SveaAppsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SveaAppsTests.swift; sourceTree = "<group>"; };
+		4DA4D57E299A3A27001CA644 /* SveaAppsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SveaAppsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA4D582299A3A27001CA644 /* SveaAppsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SveaAppsUITests.swift; sourceTree = "<group>"; };
+		4DA4D584299A3A27001CA644 /* SveaAppsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SveaAppsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4DA4D59B299A3BE9001CA644 /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		4DA4D59D299A3C9F001CA644 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4DA4D59F299A3DDE001CA644 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		4DA4D5A1299A3E1C001CA644 /* Data+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Decode.swift"; sourceTree = "<group>"; };
+		4DA4D5A3299AC330001CA644 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4DA4D5A5299ACB4D001CA644 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4DA4D5AB299AD893001CA644 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4DA4D5AD299ADA7B001CA644 /* APIResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseHandler.swift; sourceTree = "<group>"; };
+		4DA4D5AF299AF2C9001CA644 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		4DA4D5B1299D9445001CA644 /* PlaceListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListModel.swift; sourceTree = "<group>"; };
+		4DA4D5B3299E6885001CA644 /* PlaceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableViewCell.swift; sourceTree = "<group>"; };
+		4DA4D5B4299E6885001CA644 /* PlaceListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceListTableViewCell.xib; sourceTree = "<group>"; };
+		4DA4D5BA299E6E86001CA644 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4DA4D5BC299EC63B001CA644 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DA4D558299A3A25001CA644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D4824D1299EFF9C000D8997 /* MBProgressHUD in Frameworks */,
+				4D4824CE299EFF85000D8997 /* SDWebImageMapKit in Frameworks */,
+				4D4824CC299EFF85000D8997 /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA4D571299A3A27001CA644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA4D57B299A3A27001CA644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DA4D552299A3A25001CA644 = {
+			isa = PBXGroup;
+			children = (
+				4DA4D55D299A3A25001CA644 /* SveaApps */,
+				4DA4D577299A3A27001CA644 /* SveaAppsTests */,
+				4DA4D581299A3A27001CA644 /* SveaAppsUITests */,
+				4DA4D55C299A3A25001CA644 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DA4D55C299A3A25001CA644 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D55B299A3A25001CA644 /* SveaApps.app */,
+				4DA4D574299A3A27001CA644 /* SveaAppsTests.xctest */,
+				4DA4D57E299A3A27001CA644 /* SveaAppsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DA4D55D299A3A25001CA644 /* SveaApps */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D599299A3AA5001CA644 /* Model */,
+				4DA4D598299A3A9C001CA644 /* ViewModels */,
+				4DA4D597299A3A8A001CA644 /* ViewControllers */,
+				4DA4D596299A3A7A001CA644 /* CustomCells */,
+				4DA4D595299A3A6F001CA644 /* Storyboards */,
+				4DA4D594299A3A51001CA644 /* UtilitiesAndExtensions */,
+				4DA4D593299A3A47001CA644 /* Components */,
+				4DA4D59A299A3ABC001CA644 /* Network */,
+				4DA4D592299A3A3E001CA644 /* Constants */,
+				4DA4D591299A3A35001CA644 /* Common */,
+				4DA4D56A299A3A27001CA644 /* Assets.xcassets */,
+				4DA4D56F299A3A27001CA644 /* Info.plist */,
+				4DA4D567299A3A25001CA644 /* SveaApps.xcdatamodeld */,
+			);
+			path = SveaApps;
+			sourceTree = "<group>";
+		};
+		4DA4D577299A3A27001CA644 /* SveaAppsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D578299A3A27001CA644 /* SveaAppsTests.swift */,
+			);
+			path = SveaAppsTests;
+			sourceTree = "<group>";
+		};
+		4DA4D581299A3A27001CA644 /* SveaAppsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D582299A3A27001CA644 /* SveaAppsUITests.swift */,
+				4DA4D584299A3A27001CA644 /* SveaAppsUITestsLaunchTests.swift */,
+			);
+			path = SveaAppsUITests;
+			sourceTree = "<group>";
+		};
+		4DA4D591299A3A35001CA644 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D55E299A3A25001CA644 /* AppDelegate.swift */,
+				4DA4D560299A3A25001CA644 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4DA4D592299A3A3E001CA644 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D59D299A3C9F001CA644 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4DA4D593299A3A47001CA644 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D5B9299E6E67001CA644 /* CardView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4DA4D594299A3A51001CA644 /* UtilitiesAndExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D5A1299A3E1C001CA644 /* Data+Decode.swift */,
+				4DA4D5A3299AC330001CA644 /* Extensions.swift */,
+			);
+			path = UtilitiesAndExtensions;
+			sourceTree = "<group>";
+		};
+		4DA4D595299A3A6F001CA644 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D56C299A3A27001CA644 /* LaunchScreen.storyboard */,
+				4DA4D564299A3A25001CA644 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4DA4D596299A3A7A001CA644 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D5B3299E6885001CA644 /* PlaceListTableViewCell.swift */,
+				4DA4D5B4299E6885001CA644 /* PlaceListTableViewCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		4DA4D597299A3A8A001CA644 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D59B299A3BE9001CA644 /* PlaceViewController.swift */,
+				4DA4D5BC299EC63B001CA644 /* PlaceDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4DA4D598299A3A9C001CA644 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D5AF299AF2C9001CA644 /* PlaceViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4DA4D599299A3AA5001CA644 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D5B1299D9445001CA644 /* PlaceListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DA4D59A299A3ABC001CA644 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D59F299A3DDE001CA644 /* APIConstants.swift */,
+				4DA4D5A5299ACB4D001CA644 /* NetworkManager.swift */,
+				4DA4D5AB299AD893001CA644 /* NetworkService.swift */,
+				4DA4D5AD299ADA7B001CA644 /* APIResponseHandler.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4DA4D5B9299E6E67001CA644 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4D5BA299E6E86001CA644 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DA4D55A299A3A25001CA644 /* SveaApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DA4D588299A3A27001CA644 /* Build configuration list for PBXNativeTarget "SveaApps" */;
+			buildPhases = (
+				4DA4D557299A3A25001CA644 /* Sources */,
+				4DA4D558299A3A25001CA644 /* Frameworks */,
+				4DA4D559299A3A25001CA644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SveaApps;
+			packageProductDependencies = (
+				4D4824CB299EFF85000D8997 /* SDWebImage */,
+				4D4824CD299EFF85000D8997 /* SDWebImageMapKit */,
+				4D4824D0299EFF9C000D8997 /* MBProgressHUD */,
+			);
+			productName = SveaApps;
+			productReference = 4DA4D55B299A3A25001CA644 /* SveaApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DA4D573299A3A27001CA644 /* SveaAppsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DA4D58B299A3A27001CA644 /* Build configuration list for PBXNativeTarget "SveaAppsTests" */;
+			buildPhases = (
+				4DA4D570299A3A27001CA644 /* Sources */,
+				4DA4D571299A3A27001CA644 /* Frameworks */,
+				4DA4D572299A3A27001CA644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DA4D576299A3A27001CA644 /* PBXTargetDependency */,
+			);
+			name = SveaAppsTests;
+			productName = SveaAppsTests;
+			productReference = 4DA4D574299A3A27001CA644 /* SveaAppsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DA4D57D299A3A27001CA644 /* SveaAppsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DA4D58E299A3A27001CA644 /* Build configuration list for PBXNativeTarget "SveaAppsUITests" */;
+			buildPhases = (
+				4DA4D57A299A3A27001CA644 /* Sources */,
+				4DA4D57B299A3A27001CA644 /* Frameworks */,
+				4DA4D57C299A3A27001CA644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DA4D580299A3A27001CA644 /* PBXTargetDependency */,
+			);
+			name = SveaAppsUITests;
+			productName = SveaAppsUITests;
+			productReference = 4DA4D57E299A3A27001CA644 /* SveaAppsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DA4D553299A3A25001CA644 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					4DA4D55A299A3A25001CA644 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					4DA4D573299A3A27001CA644 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 4DA4D55A299A3A25001CA644;
+					};
+					4DA4D57D299A3A27001CA644 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 4DA4D55A299A3A25001CA644;
+					};
+				};
+			};
+			buildConfigurationList = 4DA4D556299A3A25001CA644 /* Build configuration list for PBXProject "SveaApps" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DA4D552299A3A25001CA644;
+			packageReferences = (
+				4D4824CA299EFF85000D8997 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				4D4824CF299EFF9C000D8997 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+			);
+			productRefGroup = 4DA4D55C299A3A25001CA644 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DA4D55A299A3A25001CA644 /* SveaApps */,
+				4DA4D573299A3A27001CA644 /* SveaAppsTests */,
+				4DA4D57D299A3A27001CA644 /* SveaAppsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DA4D559299A3A25001CA644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA4D56E299A3A27001CA644 /* LaunchScreen.storyboard in Resources */,
+				4DA4D56B299A3A27001CA644 /* Assets.xcassets in Resources */,
+				4DA4D566299A3A25001CA644 /* Main.storyboard in Resources */,
+				4DA4D5B6299E6885001CA644 /* PlaceListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA4D572299A3A27001CA644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA4D57C299A3A27001CA644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DA4D557299A3A25001CA644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA4D5A6299ACB4D001CA644 /* NetworkManager.swift in Sources */,
+				4DA4D5BD299EC63B001CA644 /* PlaceDetailViewController.swift in Sources */,
+				4DA4D59E299A3C9F001CA644 /* Constants.swift in Sources */,
+				4DA4D5AE299ADA7B001CA644 /* APIResponseHandler.swift in Sources */,
+				4DA4D59C299A3BE9001CA644 /* PlaceViewController.swift in Sources */,
+				4DA4D5BB299E6E86001CA644 /* CardView.swift in Sources */,
+				4DA4D5A2299A3E1C001CA644 /* Data+Decode.swift in Sources */,
+				4DA4D5A4299AC330001CA644 /* Extensions.swift in Sources */,
+				4DA4D5A0299A3DDE001CA644 /* APIConstants.swift in Sources */,
+				4DA4D5B5299E6885001CA644 /* PlaceListTableViewCell.swift in Sources */,
+				4DA4D569299A3A25001CA644 /* SveaApps.xcdatamodeld in Sources */,
+				4DA4D5B2299D9445001CA644 /* PlaceListModel.swift in Sources */,
+				4DA4D55F299A3A25001CA644 /* AppDelegate.swift in Sources */,
+				4DA4D5B0299AF2C9001CA644 /* PlaceViewModel.swift in Sources */,
+				4DA4D5AC299AD893001CA644 /* NetworkService.swift in Sources */,
+				4DA4D561299A3A25001CA644 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA4D570299A3A27001CA644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA4D579299A3A27001CA644 /* SveaAppsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA4D57A299A3A27001CA644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA4D585299A3A27001CA644 /* SveaAppsUITestsLaunchTests.swift in Sources */,
+				4DA4D583299A3A27001CA644 /* SveaAppsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DA4D576299A3A27001CA644 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DA4D55A299A3A25001CA644 /* SveaApps */;
+			targetProxy = 4DA4D575299A3A27001CA644 /* PBXContainerItemProxy */;
+		};
+		4DA4D580299A3A27001CA644 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DA4D55A299A3A25001CA644 /* SveaApps */;
+			targetProxy = 4DA4D57F299A3A27001CA644 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DA4D564299A3A25001CA644 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DA4D565299A3A25001CA644 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DA4D56C299A3A27001CA644 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DA4D56D299A3A27001CA644 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DA4D586299A3A27001CA644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DA4D587299A3A27001CA644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DA4D589299A3A27001CA644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SveaApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ansal.SveaApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4DA4D58A299A3A27001CA644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SveaApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ansal.SveaApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4DA4D58C299A3A27001CA644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ansal.SveaAppsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SveaApps.app/SveaApps";
+			};
+			name = Debug;
+		};
+		4DA4D58D299A3A27001CA644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ansal.SveaAppsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SveaApps.app/SveaApps";
+			};
+			name = Release;
+		};
+		4DA4D58F299A3A27001CA644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ansal.SveaAppsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SveaApps;
+			};
+			name = Debug;
+		};
+		4DA4D590299A3A27001CA644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ansal.SveaAppsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SveaApps;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DA4D556299A3A25001CA644 /* Build configuration list for PBXProject "SveaApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA4D586299A3A27001CA644 /* Debug */,
+				4DA4D587299A3A27001CA644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DA4D588299A3A27001CA644 /* Build configuration list for PBXNativeTarget "SveaApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA4D589299A3A27001CA644 /* Debug */,
+				4DA4D58A299A3A27001CA644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DA4D58B299A3A27001CA644 /* Build configuration list for PBXNativeTarget "SveaAppsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA4D58C299A3A27001CA644 /* Debug */,
+				4DA4D58D299A3A27001CA644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DA4D58E299A3A27001CA644 /* Build configuration list for PBXNativeTarget "SveaAppsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA4D58F299A3A27001CA644 /* Debug */,
+				4DA4D590299A3A27001CA644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D4824CA299EFF85000D8997 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		4D4824CF299EFF9C000D8997 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D4824CB299EFF85000D8997 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D4824CA299EFF85000D8997 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		4D4824CD299EFF85000D8997 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D4824CA299EFF85000D8997 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		4D4824D0299EFF9C000D8997 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D4824CF299EFF9C000D8997 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4DA4D567299A3A25001CA644 /* SveaApps.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4DA4D568299A3A25001CA644 /* SveaApps.xcdatamodel */,
+			);
+			currentVersion = 4DA4D568299A3A25001CA644 /* SveaApps.xcdatamodel */;
+			path = SveaApps.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4DA4D553299A3A25001CA644 /* Project object */;
+}
